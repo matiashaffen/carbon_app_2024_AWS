@@ -17,17 +17,13 @@ h4 {
   font-weight: bold;
 }
 /* Section header */
-.section_header_carbon_app {
-  background-color:#466fa6;
-}
+
 .header_carbon_app {
   display: flex;  
   align-items: start;
-  background: #466fa6;
 }
 .header_carbon_app .box {
   flex: 1;
-  background: #466fa6;
   color: #fff;
   border-radius: 10px;
   margin: 20px 10px;
@@ -54,7 +50,7 @@ h4 {
 .container_buttons_links_header_carbon_app btn {
   width: 100px;
   height: 100px;
-  background: #466fa6;
+  background: #a64691;
   color: #fff;
   display: flex;
   justify-content:center;
@@ -62,12 +58,12 @@ h4 {
 }
 /* Section carbon_app_new_entry_main */
 .section_carbon_app_new_entry_main {
-  background-color:#c5c8d9;
+  background-color:#c5c8d956;
+  color: #fff;
 }
 .carbon_app_new_entry_main {
   display: flex;  
   align-items: start;
-  background: #c5c8d9;
 }
 .carbon_app_new_entry_main .box {
   flex: 1;
@@ -119,11 +115,9 @@ h4 {
 /*Container new_entry */
 .new_entry {
   display: flex;
-  background: #c5c8d9;
   }  
 .new_entry .container {
   display: flex;
-  background: #c5c8d9;
 }
 .new_entry .container {
   display: flex;
@@ -132,7 +126,7 @@ h4 {
 }
 .new_entry .container .box {
   flex: 1;
-  background: #c5c8d9;
+  background: #0bd470;
   border-radius: 2px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -140,7 +134,7 @@ h4 {
 }  
 .new_entry .container  .box:nth-of-type(1) {
   flex-grow:1;
-  background: #fff;
+  background: #b11010;
   border-radius: 10px;
   margin: 0px 0px;
   padding: 0px 0px;
@@ -157,7 +151,7 @@ h4 {
 }  
 .new_entry .container  .box:nth-of-type(3) {
   flex-grow:1;
-  background: #fff;
+  background: #568c63;
   border-radius: 10px;
   margin: 0px 0px;
   padding: 0px 0px;
@@ -166,11 +160,10 @@ h4 {
 /*Container table_main */
 .table_main {
   display: flex;
-  background: #c5c8d9;
+  background-color: #c5c8d956;
   }  
 .table_main .container {
   display: flex;
-  background: #c5c8d9;
 }
 .table_main .container {
   display: flex;
@@ -179,7 +172,7 @@ h4 {
 }
 .table_main .container .box {
   flex: 1;
-  background: #c5c8d9;
+  background: #568c63;
   border-radius: 2px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -187,7 +180,6 @@ h4 {
 }  
 .table_main .container  .box:nth-of-type(1) {
   flex-grow:1;
-  background: #fff;
   border-radius: 10px;
   margin: 0px 0px;
   padding: 0px 0px;
@@ -214,11 +206,9 @@ h4 {
 /*Container two_emissions_graphs */
 .two_emissions_graphs {
   display: flex;
-  background: #c5c8d9;
   }  
 .two_emissions_graphs .container {
   display: flex;
-  background: #c5c8d9;
 }
 .two_emissions_graphs .container {
   display: flex;
@@ -227,7 +217,6 @@ h4 {
 }
 .two_emissions_graphs .container .box {
   flex: 1;
-  background: #c5c8d9;
   border-radius: 2px;
   margin: 20px 10px;
   padding: 15px 20px;
@@ -254,11 +243,9 @@ h4 {
 /*Container main menu */
 .main_menu {
   display: flex;
-  background: #c5c8d9;
   }  
 .main_menu .container {
   display: flex;
-  background: #c5c8d9;
 }
 .main_menu .container {
   display: flex;
@@ -267,7 +254,6 @@ h4 {
 }
 .main_menu .container .box {
   flex: 1;
-  background: #c5c8d9;
   border-radius: 2px;
   margin: 20px 10px;
   padding: 15px 20px;
