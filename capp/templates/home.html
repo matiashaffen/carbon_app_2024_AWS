@@ -1,13 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
 
-
 <!-- Header -->
 <section class="section_header_home">
-  <div class="container">
-
-    <div class="header_home">
-      <div class="box"> 
+    <div class="hidden-element animate">
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -17,99 +13,183 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
-        <h1 style="font-size:55px;"><span class="text-logo"> Home</span></h1>
-        <p style="text-align:left;">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dolores quos asperiores repellendus facilis cum illo aperiam odit doloremque nostrum. Totam excepturi labore voluptatibus iusto sapiente quisquam consectetur optio magnam voluptates omnis vel officia alias distinctio quas laborum reiciendis ratione inventore veniam, cupiditate doloribus dolore, eius natus a. Magni inventore consequuntur voluptas reprehenderit perferendis! Molestias aspernatur rem autem aut temporibus.
-        </p>
-        {% if current_user.is_authenticated %}
-        {% else %}
-        <div class="container_buttons_links_header_home">
-          <div class="btn">
-              <a href="{{url_for('users.register')}}" class="btn btn-primary btn-lg mr-2", style="background-color:#007bff;">Register</a>
-          </div>
-          <div class="btn">
-              <a href="{{url_for('users.login')}}" class="btn btn-primary btn-lg mr-2", style="background-color:#007bff;">Login</a>
-          </div>
+        <script>
+          setTimeout(function () {
+            var flashes = document.querySelectorAll('.alert');
+            flashes.forEach((flash) => flash.remove());
+          }, 5000);
+        </script>
+        
+        <div class="video1">
+        <div class="flex-container1">
+          <div class="background-video">
+        <video autoplay loop muted playsinline>
+          <source src="static/icons/sol.mov" type="video/mp4">
+          Din nettleser støtter ikke video taggen.
+      </video>
+    </div>
+    <div class="content_background">
+        <!-- Interne innhold her -->
+        <h1>EcoTracker</h1>
+        <p>Measure. Reduce. Contribute.</p>
+    </div>
+</div>
         </div>
-        {% endif %}
       </div>
-      <div class="box">
-        <img 
-          src="{{url_for('static', filename='icons/carbon_app.svg')}}"
-          width="325" 
-          height="325"
-          alt=""/>
+        <div class="hidden-element animate">
+        <div class="header_home">
+          <div class="box text-box">
+        <p>
+          Hello, and welcome to our carbon emissions calculator app! Our mission is to empower individuals and companies to understand
+           their carbon footprint better and make informed steps toward reducing their environmental impact.
+           Our app is user-friendly and offers customized advice on how to reduce emissions tailored to your personal habits or company
+            operations. With our app, you can monitor your carbon emissions and implement significant changes to lessen your effect on our
+             planet while contributing to a more sustainable future. Join us in the effort to protect our Earth today!
+        </p>
+      </div>
+      <div class="box image-box">
+        <img src="static/icons/EcoTracker.jpeg" style="border-radius: 20%; width:300px; border-style:outset; border-width: 5px;">
       </div>
     </div>
-
   </div>
-</section> 
-
-
+</section>
 
 <!-- Developers -->
 <section class="section_developers">
   <div class="container">
-
-    <div class="developers" style="display:block;">
-      <h1 style="text-align:center;"> Our Team</h1>
+    <div class="hidden-element animate">
+    <div class="header_team">
+      <div class="box text-box">
       <p>
-        Our team of economists and developers ... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, ut? Praesentium quidem sunt perspiciatis doloremque fugiat nesciunt quaerat ullam, pariatur iure unde ratione ipsum adipisci repellendus, repudiandae hic sit, temporibus molestias corrupti aut soluta sequi! Architecto deleniti expedita nisi repudiandae enim eum quas odit facilis placeat neque porro, animi incidunt consectetur. Maiores ab saepe tempora, iure asperiores beatae suscipit cum ipsum, rerum doloremque reprehenderit dolorum debitis, aliquam quasi. Maiores corporis fuga quasi nesciunt dolor iste, inventore necessitatibus unde!
+        This semester, our cohort of economics students has taken the Green Digitalization and App Development course. 
+        Under the guidance of our instructor, Mario Blázquez de Paz, we've been working collectively to create and launch our own
+        applications as part of a team project. We've utilized a range of programming languages such as HTML, 
+        CSS, Flask, Latex, Python, and JavaScript to architect our apps. Our learning journey has included mastering the 
+        deployment of these applications on platforms like Amazon Web Services, and our collaborative efforts have been 
+        coordinated through Github. Should you have any questions about the application or wish to learn more about its developers, 
+        please feel free to contact our group or reach out to individual members via their LinkedIn profiles.
       </p>      
     </div>
-
+    <div class="box image-box">
+      <img src="static/icons/teambonders.jpeg" style="border-radius: 5%; width:500px; border-width: 5px;">
+    </div>
+    </div>
+    </div>
+    <div class="hidden-element animate">
     <div class="developers">
         <div class="box">
-          <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="" style="border-radius: 50%; width:200px;">
-          <h3>Developer 1</h3>
-          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
-          </p>
-          <div class="section_container_buttons_developers">
-            <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+          <img src="static/icons/Matiasvh.jpeg" style="border-radius: 50%; width:200px;">
+        <h3>Matias von Haffenbrädl</h3>
+        <p>  Matias von Haffenbrädl, who is 24 and hails from Skien, is on his way to earning a Bachelor's degree in Business and Administration from the Western University of Applied Sciences. Prior to diving into his current academic pursuit, Matias gained some hands-on experience with computer programming, specifically in R and JavaScript languages. The driving force behind his decision to enroll in the business program was his desire to thoroughly expand his capabilities and business insight, enabling him to independently sharpen his talents further.
+        </p>
+        <div class="container_buttons_developers">
+          <a class="btn_developers" href="https://www.linkedin.com/in/matias-von-haffenbr%C3%A4dl-610534257/" target="_blank">Linked
+            <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
           </div> 
         </div>
         <div class="box">
-          <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" style="border-radius: 50%; width:200px;">
-          <h3>Developer 2</h3>
-          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+          <img src="static/icons/mathias.jpeg" style="border-radius: 50%; width:200px;">
+          <h3>Mathias Martinsen</h3>
+          <p>  
+            I'm Mathias Martinsen, a 22-year-old student currently pursuing a Bachelor's degree in Business and Administration at HVL in Bergen.
+            Committed to learning and growing, I aim to enhance my coding skills, as well as understanding more about crucial environmental challenges. 
+            In addition to my academic pursuits, I'm also passionate about football and skiing, finding joy and relaxation in these activities whenever I can.
           </p>
-          <div class="section_container_buttons_developers">
-            <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="https://www.linkedin.com/in/mathias-martinsen-34b3882b6/" target="_blank">Linked
+              <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
           </div> 
         </div>           
         <div class="box">
-          <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" style="border-radius: 50%; width:200px;">
-          <h3>Developer 3</h3>
-          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+          <img src="static/icons/casper.jpeg" style="border-radius: 50%; width:200px;">
+          <h3>Casper Berle Linnestad</h3>
+          <p>
+            Casper Berle Linnestad, a 21-year-old student from Drøbak, is currently pursuing a Bachelor's degree in Economics and Administration at Western University of Applied Science.
+          His passion lies in creating digital solutions to address economic and environmental challenges faced by individuals worldwide. 
+          While inexperienced in Python programming, Casper's quick learning abilities have propelled him forward in this course, enabling him to develop the skills necessary to realize his ambitions in digital solution development for the global community.
           </p>
-          <div class="section_container_buttons_developers">
-            <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="https://www.linkedin.com/in/casper-berle-linnestad-b7300699/" target="_blank">Linked
+              <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
           </div> 
         </div>     
     </div>
-
+    </div>
+    <div class="hidden-element animate">
     <div class="developers">
       <div class="box2">
-        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" style="border-radius: 50%; width:200px;">
-        <h3>Developer 4</h3>
-        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+        <img src="static/icons/Elias.jpeg" style="border-radius: 50%; width:200px;">
+        <h3>Elias Slettebak Urke</h3>
+        <p>  
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus accusamus quo, consequuntur deserunt assumenda quisquam corrupti vitae temporibus ipsa enim nam voluptatibus aut veritatis odio illum accusantium qui repudiandae?
         </p>
-        <div class="section_container_buttons_developers">
-          <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+        <div class="container_buttons_developers">
+          <a class="btn_developers" href="https://www.linkedin.com/in/elias-slettebak-urke-7789242b7/" target="_blank">Linked
+            <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
         </div> 
       </div>
       <div class="box2">
-        <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="" style="border-radius: 50%; width:200px;">
-        <h3>Developer 5</h3>
-        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+        <img src="static/icons/Jesper.jpeg" alt="" style="border-radius: 50%; width:200px;">
+        <h3>Jesper Aas Gonstad</h3>
+        <p>  
+          Jesper Gonstad, a 22-year-old from Hamar, is currently pursuing a Bachelor's degree in Economics at Western Norway University of Applied Sciences. 
+          Finding this course both intriguing and enlightening, it has introduced him to a whole new realm of knowledge. 
+          Alongside his academic pursuits, Jesper enjoys staying active and engaging in various physical activities.
         </p>
-        <div class="section_container_buttons_developers">
-          <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+        <div class="container_buttons_developers">
+          <a class="btn_developers" href="https://www.linkedin.com/in/jesper-gonstad-2700932b7/" target="_blank">Linked
+            <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
         </div> 
-      </div>           
+      </div>
       <div class="box2">
+        <img src="static/icons/Nikko.jpeg" style="border-radius: 50%; width:200px;">
+        <h3>Nikodem Wiktorowicz</h3>
+        <p> 
+          Nikodem Wiktorowicz, a 20-year-old student based in Bergen, is currently working towards a Bachelor's degree in Business and Administration. 
+          Nikodem's passion for computer programming ignited during high school, where he began turning his interest into a reality. 
+          Proficient in languages like JavaScript and R and basic konwledge in HTML and CSS, he has cultivated his skills and continues to explore the dynamic world of programming. 
+          The primary motivation driving his choice to join the business program was the aspiration to significantly broaden his skills and deepen his understanding of business.
+        </p>
+        <div class="container_buttons_developers">
+          <a class="btn_developers" href="https://www.linkedin.com/in/nikodem-wiktorowicz-a255592a8/" target="_blank">Linked
+            <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
+        </div> 
+      </div>          
+      </div>
 
-      </div>     
+      </div>
+      <div class="hidden-element animate">
+        <div class="developers">
+          <div class="box3">
+            <img src="static/icons/Alex.jpeg" style="border-radius: 50%; width:200px;">
+            <h3>Alexander Fosse</h3>
+            <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+            </p>
+            <div class="container_buttons_developers">
+              <a class="btn_developers" href="https://www.linkedin.com/in/alexander-fosse-7367a8244/?fbclid=IwAR1hecc4dkoP4OCVQc1PbaUIsLzS7yy7Yv5UxQF8PLw9iibqhwgZW7ntgkI" target="_blank">Linked
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
+            </div> 
+          </div> 
+            <div class="box3">
+              <img src="static/icons/Olav.jpeg" style="border-radius: 50%; width:200px;">
+              <h3>Olav Ljones</h3>
+              <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+              </p>
+              <div class="container_buttons_developers">
+                <a class="btn_developers" href="https://www.linkedin.com/in/olav-ljones-9b40a6274/" target="_blank">Linked
+                  <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
+              </div> 
+            </div>
+              <div class="box3">
+                <img src="static/icons/Jonas.jpeg" style="border-radius: 50%; width:200px;">
+                <h3>Jonas Eide Vågen</h3>
+                <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+                </p>
+                <div class="container_buttons_developers">
+                  <a class="btn_developers" href="https://www.linkedin.com/in/jonas-v%C3%A5gen-3088782b8/" target="_blank">Linked
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6bbd;"></i></a>
+                </div> 
+              </div>         
   </div>
 
   </div>          
