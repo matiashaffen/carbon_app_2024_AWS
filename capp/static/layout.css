@@ -9,21 +9,18 @@ Navbar (a menu): #2a4359
 /* Google fonts Roboto  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
-/* CSS utilities */
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
+
 body {
   font-family: 'Roboto', sans-serif;
-  background: #fff;
   line-height: 1.6;
+  background-color: #000000d3;
 }
+
 .container {
   margin: auto;
-  max-width: 1320px;
 }
+
 ul { 
   list-style: none;
   font-size: 400;
@@ -43,9 +40,89 @@ p {
 img {
   width: 100%;
 }
+
 /* Navbar  */
 .section_carbon_app_navbar {
-  background-color:#8bbbd9;
+  background-color: #000000b2;
+}
+
+.carbon_app_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: px;
+}
+
+.carbon_app_navbar_left {
+  display: flex;
+  align-items: center;
+  margin-right: auto; 
+}
+
+.carbon_app_navbar_right {
+  display: flex;
+  align-items: center;
+}
+
+.carbon_app_navbar a {
+  color: #ffffff99;
+  font-size: 30px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.carbon_app_navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.carbon_app_navbar ul li {
+  padding-right: 20px;
+}
+
+.carbon_app_navbar ul li a {
+  color: #568c63;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.carbon_app_navbar ul li:hover a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #568c63;
+  transition: transform 0.5s ease;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+}
+
+.carbon_app_navbar ul li:hover a:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.text-logo {
+  color: #568c63;
+  font-size: 40px;
+}
+
+.carbon_app_navbar .login {
+  margin-left: auto;
+  color: #568c63;
+  font-size: 20px;
+}
+
+/* her */
+.section_carbon_app_navbar {
+  background-color:#000000b2;
+  z-index: 10;
 }
 .carbon_app_navbar {
   display: flex;
@@ -53,32 +130,55 @@ img {
   justify-content: flex-start;
   height: 70px;
   align-items: center;
-  background-color: #8bbbd9;
   padding: 0 0px;
 }
-.carbon_app_navbar a {
-  color: #2a4359;
+.carbon_app_navbar a{
+  color: #ffffff99;
+  font-size: 30px;
   padding: 10px 20px;
-  margin: 0 5px;
-  font-size: 20px;
+}
+
+.carbon_app_navbar ul li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.carbon_app_navbar ul li a {
   text-decoration: none;
+  color: #568c63; 
+  position: relative;
+  font-size: 20px;
 }
-.carbon_app_navbar a:hover{
-  border-bottom: #2a4359 4px solid;
+
+.carbon_app_navbar ul li:hover a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #568c63;
+  transition: transform 0.5s ease;
+  transform-origin: bottom right;
+  transform: scaleX(0);
 }
-.carbon_app_navbar ul {
-  display: flex;
-  flex-direction: row;
+
+.carbon_app_navbar ul li:hover a:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
-.carbon_app_navbar .logo {
-  font-weight: 400;
-}
+
 .text-logo {
   color: #568c63;
+  font-size: 40px;
 }
 /* Footer  */
 .section_footer{
-  background-color:#8bbbd9;
+  background-color:#000000b2;
+  color: #568c63;
+  flex: 1;
 }
 .footer {
   display: flex;
@@ -86,7 +186,6 @@ img {
   justify-content: center;
   height: 70px;
   align-items: center;
-  background-color: #8bbbd9;
   padding: 0 0px;
 }
 
