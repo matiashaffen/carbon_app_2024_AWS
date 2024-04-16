@@ -50,7 +50,7 @@
         <div class="container">
           <div class="carbon_app_navbar">
             <h1 class="logo"><a href="{{url_for('home.home_home')}}">
-              <img src="static/icons/ecologo.png" style=" width:50px;"> Eco </span>Tracker
+              <img src="{{url_for('static', filename='icons/ecologo.png')}}" style=" width:50px;"> Eco </span>Tracker
             </h1>
             {% if current_user.is_authenticated %}
           <div class="carbon_app_navbar_left">
