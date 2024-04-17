@@ -62,15 +62,18 @@ p {
   position: center;
   z-index: 2;
   text-align: center;
-  color: #ff4000;
+  color: #fff;
 }
-
 .content_background h1{
   position: center;
   z-index: 2;
   text-align: center;
-  color: #ff4000;
+  color: #fff;
 }
+.glowing-text {
+  text-shadow: 0 0 10px #568c63, 0 0 20px #568c63, 0 0 30px #568c63, 0 0 40px #568c63, 0 0 70px #568c63, 0 0 80px #568c63, 0 0 100px #568c63, 0 0 150px #568c63; /* Glødende skygge-effekt */
+}
+
 
 .header_home {
   position: relative;
@@ -88,7 +91,7 @@ p {
   bottom: 15%; /* Reduserer verdien for å "løfte" tekstboksen */
   left: 10%;
   height: 60%; /* Mindre høyde enn bildeboksen */
-  background-color: #ff4000a5;
+  background-color: #568c63;
   padding: 20px;
   z-index: 1; /* Sørger for at tekstboksen overlapper bildeboksen */
   display: flex;
@@ -126,7 +129,7 @@ p {
   bottom: 15%; /* Reduserer verdien for å "løfte" tekstboksen */
   right: 5%;
   height: 65%; /* Mindre høyde enn bildeboksen */
-  background-color: #ff4000a5;
+  background-color: #568c63;
   padding: 20px;
   z-index: 1; /* Sørger for at tekstboksen overlapper bildeboksen */
   display: flex;
