@@ -91,13 +91,14 @@ p {
   bottom: 15%; /* Reduserer verdien for å "løfte" tekstboksen */
   left: 10%;
   height: 60%; /* Mindre høyde enn bildeboksen */
-  background-color: #568c63;
+  background-color: #c5c8d930;
   padding: 20px;
   z-index: 1; /* Sørger for at tekstboksen overlapper bildeboksen */
   display: flex;
   align-items: center; /* Sentrerer teksten vertikalt */
   justify-content: center; /* Sentrerer teksten horisontalt */
   border-radius: 15px;
+  color: #fff;
 }
 
 .header_home .image-box {
@@ -129,13 +130,14 @@ p {
   bottom: 15%; /* Reduserer verdien for å "løfte" tekstboksen */
   right: 5%;
   height: 65%; /* Mindre høyde enn bildeboksen */
-  background-color: #568c63;
+  background-color: #c5c8d930;
   padding: 20px;
   z-index: 1; /* Sørger for at tekstboksen overlapper bildeboksen */
   display: flex;
   align-items: center; /* Sentrerer teksten vertikalt */
   justify-content: center; /* Sentrerer teksten horisontalt */
   border-radius: 15px;
+  color: #fff;
 }
 
 .header_team .image-box {
