@@ -15,7 +15,7 @@ efco2={'Bus':{'Diesel':0.025,'CNG':0.007,'Petrol':0.10231,'No Fossil Fuel':0},
     'Plane':{'Petrol':0.133},
     'Ferry':{'Diesel':0.226, 'CNG':0.1131, 'No Fossil Fuel':0},
     'Motorbike':{'Petrol':0.0852,'No Fossil Fuel':0},
-    'Train':{'No Fossil Fuel':0},
+    'Train':{'No Fossil Fuel':0.01},
     'Scooter':{'No Fossil Fuel':0},
     'Bicycle':{'No Fossil Fuel':0},
     'Walk':{'No Fossil Fuel':0}}
@@ -229,7 +229,7 @@ def new_entry_train():
         # kms = request.form['kms']
         # fuel = request.form['fuel_type']
 
-        co2 = float(kms) * efco2[transport][fuel]
+        co2 = float(kms) * 26 * efco2[transport][fuel]
         ch4 = float(kms) * efch4[transport][fuel]
         total = co2+ch4
 
