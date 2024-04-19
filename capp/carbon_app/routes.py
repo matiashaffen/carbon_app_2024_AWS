@@ -20,7 +20,7 @@ efco2={'Bus':{'Diesel':0.025,'CNG':0.007},
     'Bicycle':{'No Fossil Fuel':0},
     'Walk':{'No Fossil Fuel':0}}
 efch4={'Bus':{'Diesel':2e-5,'CNG':2.5e-3},
-    'Car':{'Petrol':3.1e-4,'Diesel':3e-6},
+    'Car':{'Petrol':3.1e-4,'Diesel':3e-6, 'No Fossil Fuel':0},
     'Plane':{'Petrol':1.1e-4},
     'Ferry':{'Diesel':3e-5},
     'Motorbike':{'Petrol':2.1e-3,'No Fossil Fuel':0},
