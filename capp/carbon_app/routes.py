@@ -10,8 +10,8 @@ carbon_app=Blueprint('carbon_app',__name__)
 
 #Emissions factor per transport in kg per passemger km
 #Data from paper and: http://efdb.apps.eea.europa.eu/?source=%7B%22query%22%3A%7B%22match_all%22%3A%7B%7D%7D%2C%22display_type%22%3A%22tabular%22%7D
-efco2={'Bus':{'Diesel':0.025,'CNG':0.07,'Petrol':0.10231,'No Fossil Fuel':0},
-    'Car':{'Petrol':0.18592,'Diesel':0.16453,'No Fossil Fuel':0},
+efco2={'Bus':{'Diesel':0.025,'CNG':0.007,'Petrol':0.10231,'No Fossil Fuel':0},
+    'Car':{'Petrol':0.15647,'Diesel':0.13009,'No Fossil Fuel':0},
     'Plane':{'Petrol':0.133},
     'Ferry':{'Diesel':0.226, 'CNG':0.1131, 'No Fossil Fuel':0},
     'Motorbike':{'Petrol':0.0852,'No Fossil Fuel':0},
