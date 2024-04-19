@@ -10,19 +10,19 @@ carbon_app=Blueprint('carbon_app',__name__)
 
 #Emissions factor per transport in kg per passemger km
 #Data from paper and: http://efdb.apps.eea.europa.eu/?source=%7B%22query%22%3A%7B%22match_all%22%3A%7B%7D%7D%2C%22display_type%22%3A%22tabular%22%7D
-efco2={'Bus':{'Diesel':0.025,'CNG':0.007,'Petrol':0.10231,'No Fossil Fuel':0},
-    'Car':{'Petrol':0.15647,'Diesel':0.13009,'No Fossil Fuel':0},
+efco2={'Bus':{'Diesel':0.025,'CNG':0.007},
+    'Car':{'Petrol':0.15647,'Diesel':0.13009, 'No Fossil Fuel':0.00489},
     'Plane':{'Petrol':0.133},
-    'Ferry':{'Diesel':0.226, 'CNG':0.1131, 'No Fossil Fuel':0},
-    'Motorbike':{'Petrol':0.0852,'No Fossil Fuel':0},
+    'Ferry':{'Diesel':0.226},
+    'Motorbike':{'Petrol':0.0852},
     'Train':{'No Fossil Fuel':0.01},
     'Scooter':{'No Fossil Fuel':0},
     'Bicycle':{'No Fossil Fuel':0},
     'Walk':{'No Fossil Fuel':0}}
-efch4={'Bus':{'Diesel':2e-5,'CNG':2.5e-3,'Petrol':2e-5,'No Fossil Fuel':0},
-    'Car':{'Petrol':3.1e-4,'Diesel':3e-6,'No Fossil Fuel':0},
+efch4={'Bus':{'Diesel':2e-5,'CNG':2.5e-3},
+    'Car':{'Petrol':3.1e-4,'Diesel':3e-6},
     'Plane':{'Petrol':1.1e-4},
-    'Ferry':{'Diesel':3e-5, 'CNG':3e-5,'No Fossil Fuel':0},
+    'Ferry':{'Diesel':3e-5},
     'Motorbike':{'Petrol':2.1e-3,'No Fossil Fuel':0},
     'Train':{'No Fossil Fuel':0},
     'Scooter':{'No Fossil Fuel':0},
